@@ -25,7 +25,7 @@ export async function GET(request){
 
 export async function POST(request){
  dbConnect();
-let {id}=await request.body;
+let {id}=await request.json();
 if(!id){
 return Response.json({data:"please give id"},{status:400});
 }
