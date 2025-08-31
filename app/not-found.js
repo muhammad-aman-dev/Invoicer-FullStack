@@ -35,7 +35,7 @@ export default function NotFoundPage() {
   return (
     <div className="flex flex-col text-gray-800 items-center justify-center h-screen gap-6">
       <span className="font-bold text-4xl text-center">
-        Sorry, Can't Find Your Page!
+        Sorry, Can&apos;t Find Your Page!
       </span>
       <Link
         href="/"
