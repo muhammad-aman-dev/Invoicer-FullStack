@@ -40,7 +40,7 @@ const Page = ({ params }) => {
 
   return (
     <div className="bg-gray-100 min-h-screen p-6">
-      <div className="bg-white shadow-md rounded-2xl p-6 max-w-5xl mx-auto">
+      <div className="bg-white shadow-md rounded-2xl p-2 sm:p-6 max-w-5xl mx-auto">
         <h1 className="text-2xl font-bold text-gray-800 mb-6">Customer Details</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
           <div>
