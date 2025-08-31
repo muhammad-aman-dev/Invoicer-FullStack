@@ -60,7 +60,7 @@ export async function DELETE(request){
   let id=searchParams.get('id');
   try{
     let invoice=await invoiceSchema.findOne({invoiceNum:id});
-    let customer=await Customers.findOne({customerName:invoice.customerName});
+    let customer=await Customers.findOne({customerName:invoice.customerName,customerPhone:invoice.customerPhone});
     customer.invoices=customer.invoices-1;
     await customer.save();
     await invoiceSchema.deleteOne({invoiceNum:id})
