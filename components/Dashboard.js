@@ -43,7 +43,7 @@ const Dashboard = () => {
   return (
     <div className='flex flex-col font-serif gap-2'>
         <h1 className='text-3xl text-gray-800'>Dashboard</h1>
-     <div className='flex gap-2 sm:flex-row flex-col'>
+     <div className='flex gap-2 sm:flex-row flex-col max-w-screen'>
       <div className='flex'>
         <div className='flex gap-2'>
         <div className='min-h-[130px] min-w-[180px] bg-[#fafafa] rounded-2xl'>
