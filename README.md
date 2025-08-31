@@ -1,4 +1,4 @@
-# 📊 Invoicer-FullStack
+# 📊 Invoicer
 
 A sleek, full-stack **Next.js invoicing application** 💻✨  
 Manage invoices, customers, and revenue insights with a **secure, responsive, and modern UI**.
