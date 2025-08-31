@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📊 Invoicer-FullStack
 
-## Getting Started
+A sleek, full-stack **Next.js invoicing application** 💻✨  
+Manage invoices, customers, and revenue insights with a **secure, responsive, and modern UI**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 🔐 **JWT Authentication** – secure login & protected routes  
+- 🧾 **Invoice Management** – create, edit, delete, and track invoices  
+- 📥 **Download Invoice as PDF** – export each invoice individually with **html2pdf.js**  
+- 🔄 **Invoice Status Tracking** – mark invoices as:  
+  - ✅ Paid  
+  - ⏳ Not Paid  
+- 👥 **Customer Management** – add, update, and view customers  
+- 📈 **Financial Dashboard**  
+  - Total revenue overview  
+  - Pending payments tracking  
+  - Dynamic **12-month revenue chart**  
+- 📱 **Responsive UI** – optimized for desktop & mobile  
+- ⚡ Built entirely with **Next.js (frontend + backend)**  
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌐 Live Demo
 
-## Learn More
+🚀 Try it here: **[Invoicer-FullStack Live](https://your-deployment-link.com)**  
 
-To learn more about Next.js, take a look at the following resources:
+*(Replace with your actual deployment link once live!)*  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 💡 Usage Highlights
 
-## Deploy on Vercel
+1. 🔑 **Login/use Guest** to unlock protected routes  
+2. 📊 **Dashboard** – revenue, pending invoices, last 12 months graph  
+3. 🧾 **Invoices** – create, edit, delete, update status (Paid / Not Paid)  
+4. 📥 **Download invoice as PDF** – export invoices one by one  
+5. 👥 **Customers** – add & manage clients  
+6. 📱 **Beautiful responsive UI** across devices  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
