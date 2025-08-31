@@ -2,22 +2,20 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Link from 'next/link';
-import { use } from 'react';
 
 const Page = ({ params }) => {
-  const [Loading, setLoading] = useState(true);
-  const [customer, setcustomer] = useState({});
-  const [invoices, setinvoices] = useState([]);
-  const data = use(params);
+  const [loading, setLoading] = useState(true);
+  const [customer, setCustomer] = useState({});
+  const [invoices, setInvoices] = useState([]);
 
-  async function getData(data) {
+  async function getData(id) {
     setLoading(true);
     try {
-      let res = await axios.get(`/api/customerDetails?id=${data}`);
-      let customergot = res.data.data.customer;
-      let invoicesgot = res.data.data.customerInvoices;
-      setcustomer(customergot);
-      setinvoices(invoicesgot);
+      const res = await axios.get(`/api/customerDetails?id=${id}`);
+      const customergot = res.data.data.customer;
+      const invoicesgot = res.data.data.customerInvoices;
+      setCustomer(customergot);
+      setInvoices(invoicesgot);
       setLoading(false);
     } catch (err) {
       console.log(err);
@@ -26,10 +24,12 @@ const Page = ({ params }) => {
   }
 
   useEffect(() => {
-    getData(data.id);
-  }, []);
+    if (params?.id) {
+      getData(params.id);
+    }
+  }, [params.id]);  // ✅ add dependency here
 
-  if (Loading) {
+  if (loading) {
     return (
       <div className="flex flex-col justify-center items-center h-screen gap-2">
         <div className="w-12 h-12 border-4 border-gray-200 border-t-blue-600 rounded-full animate-spin"></div>
@@ -69,7 +69,7 @@ const Page = ({ params }) => {
           </div>
 
           {invoices.map((invoice, index) => {
-            let products = invoice.products.length;
+            const products = invoice.products.length;
 
             return (
               <div
