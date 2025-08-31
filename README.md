@@ -25,9 +25,7 @@ Manage invoices, customers, and revenue insights with a **secure, responsive, an
 
 ## 🌐 Live Demo
 
-🚀 Try it here: **[Invoicer-FullStack Live](https://your-deployment-link.com)**  
-
-*(Replace with your actual deployment link once live!)*  
+🚀 Try it here: **[Invoicer Live](https://invoiceraman.vercel.app)**  
 
 ---
 
