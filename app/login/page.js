@@ -60,7 +60,7 @@ const Page = () => {
   }
 
   return (
-    <div className="flex h-screen items-center justify-center bg-gradient-to-br from-gray-50 via-white to-gray-100 flex-col w-full gap-6 px-4">
+    <div className="flex h-screen relative items-center justify-center bg-gradient-to-br from-gray-50 via-white to-gray-100 flex-col w-full gap-6 px-4">
       <h1 className="text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent drop-shadow-sm">
         Invoicer
       </h1>
@@ -80,13 +80,39 @@ const Page = () => {
           deleteSpeed={50}
         />
       </h2>
+      <div className="footer fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 shadow-md py-3 px-4 flex flex-wrap gap-2 items-center justify-center text-sm text-gray-600 z-50">
+  <span>For Contact:</span>
+  <a
+    href="mailto:amanmuhammad567@gmail.com"
+    className="ml-2 text-blue-600 hover:text-blue-800 underline transition"
+  >
+    amanmuhammad567@gmail.com
+  </a>
+  <span>·</span>
+  <a
+    href="tel:+923067849161"
+    className="ml-2 text-blue-600 hover:text-blue-800 underline transition"
+  >
+    +92 306 7849161
+  </a>
+
+  <span>·</span>
+  <a
+    href="https://wa.me/923067849161"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="ml-2 text-green-600 hover:text-green-800 underline transition"
+  >
+    WhatsApp
+  </a>
+</div>
       <div className="bg-white border border-gray-200 p-6 sm:p-8 rounded-2xl shadow-xl w-full sm:w-1/2 lg:w-1/3 flex flex-col gap-4">
         <input
           type="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setemail(e.target.value)}
-          className="border border-gray-300 bg-gray-50 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-400 focus:border-blue-400 p-3 rounded-xl transition"
+          className="border border-gray-300 bg-gray-50 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-400 focus:border-blue-400 focus:outline-none p-3 rounded-xl transition"
         />
         <div className='w-full relative'>
           <Image src={showPass?'/notview.svg':'/view.svg'} className='absolute cursor-pointer right-2 top-3' height={24} width={24} alt='Show Password Image' onClick={handleshowPass}/>
@@ -95,7 +121,7 @@ const Page = () => {
           placeholder="Password"
           value={password}
           onChange={(e) => setpassword(e.target.value)}
-          className="border w-full border-gray-300 bg-gray-50 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-400 focus:border-blue-400 p-3 rounded-xl transition"
+          className="border w-full border-gray-300 bg-gray-50 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-400 focus:border-blue-400 focus:outline-none p-3 rounded-xl transition"
         />
         </div>
         <button
